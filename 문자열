@@ -1,0 +1,39 @@
+using System;
+
+namespace App008
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string greeting = "Good Moring";
+
+            Console.WriteLine(greeting);
+            Console.WriteLine();
+
+            //Index0f
+            Console.WriteLine($"{greeting.IndexOf("GOOD")}");
+            Console.WriteLine($"{greeting.IndexOf("d")}");
+
+            //LastIndexOf()
+            Console.Write($"{greeting.LastIndexOf("Good")}");
+            Console.WriteLine($"{greeting.LastIndexOf("o")}");
+
+            //StartsWith()
+            Console.WriteLine($"StartWith: {greeting.StartsWith("Good")}");
+            Console.WriteLine($"StartWith: {greeting.StartsWith("Mornging")}");
+
+            //EndsWith()
+            Console.WriteLine($"EndWith ; {greeting.EndsWith("Good")}");
+            Console.WriteLine($"EndWith : {greeting.EndsWith("Morning")}");
+
+            //Contains()
+            Console.WriteLine($"Contains Evening : {greeting.Contains("Evening")}");
+            Console.WriteLine($"Contains Evening : {greeting.Contains("Morning")}");
+
+            //Replace()
+            Console.WriteLine($"Replace Evening :{ greeting. Replace("Morning", "Evening")}");
+
+        }
+    }
+}
